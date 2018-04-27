@@ -1,0 +1,43 @@
+# 数据库连接参数
+Host=192.168.1.13=str
+Port=3306=int
+User=zhangweijian=str
+Passwd=zhangweijian=str
+Db=600ly_basic_data=str
+Charset=utf8=str
+# CNNModel参数
+upLag=1500=int
+inChannel=8=int
+outChannel=15=int
+step=50=int
+hidden=10=int
+output=1=int
+weight_decay=0.05=float
+lossCriterion=L1=str
+learningRate=0.01=float
+# 控制周期
+pLength=120=int
+# 预测燃气量下限
+downGasAmount=800=int
+# 预测燃气量上限
+upGasAmount=4000=int
+# 锅炉系统的采样频率
+BoilerFreq=1=int
+# 天气系统的采样频率
+WeatherFreq=60=int
+# 室内温度传感器的采样频率
+InHomeFreq=120=int
+# 换热站系统的采样频率
+HRZFreq=1=int
+# 比例权重
+stableWeight=0.5=float
+targetWeight=0.5=float
+# 正则化配置文件名
+FScaler=FeatureScaler.z=str
+TScaler=TargetScaler.z=str
+# 模型参数存储文件
+ModelParasFile=ModelParasFile.z=str
+# 换热站编号
+HRZID=24=int
+# 板换机组编号
+Code=N1=str
